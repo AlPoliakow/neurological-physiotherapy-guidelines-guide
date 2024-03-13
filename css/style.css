@@ -87,115 +87,135 @@ textarea {
 /* ==========================================================================
    Mobile first
    ========================================================================== */
-  html {
-    font-size: 1rem;
-  }
+html {
+  font-size: 1rem;
+}
 
-  body{ 
+body {
+  width: 90%;
   font-size: 1em;
   text-align: left;
-  }
-
- header .content-wrapper,
- .explanation .content-wrapper,
- .main-content .content-wrapper,
- footer .content-wrapper {
-  display:flex;
-  width:90%;
-  margin:0;
-  flex-direction:column;
- }
- 
-
- header {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+header {
   padding: 10px 0;
   background: rgb(232, 245, 173);
 }
- /*.parent {
+
+header,
+.explanation {
+  display: flex;
+  justify-content: center;
+}
+
+header .content-wrapper,
+.explanation .content-wrapper,
+.main-content .content-wrapper,
+footer .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 0;
+}
+
+.explanation {
+  display: flex;
+  background-color: rgb(184, 248, 184);
+  height: 100px;
+}
+
+.explanation h3 {
+  text-align: center;
+  font-size: 0.75em;
+  width: 60%;
+  margin-left: 3%;
+}
+
+.main-content {
   display:flex;
-  justify-content:center;
+  justify-content:flex-start;
+  background-color: rgb(170, 224, 243);
+  height: 200px;
+}
+
+.main-content .content-wrapper {
+  width:65%;
   align-items: center;
+}
+
+.main-content .content-wrapper .selections,
+.main-content .content-wrapper .guides {
+  display: flex;
   flex-direction:column;
- }*/
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: 0;
+}
 
- /*.child{
-  display:flex; 
- }*/
+.main-content .content-wrapper .guides h3{
+  font-size: 0.9em;
+}
 
-  .explanation {
-    display:flex;
-    background-color: rgb(184, 248, 184);
-    height: 100px;
-  }
+footer {
+  display: flex;
+  padding: 20px 50px;
+  height: 300px;
+  background-color: rgb(226, 154, 226);
+}
 
-  .explanation h3 {
-    text-align: center;
-    font-size:0.75em;
-    width:60%;
-    margin-left:3%;
-  }
-  
-  .main-content{
-    padding-top:20px;
-    background-color: rgb(170, 224, 243);
-    height: 200px;
-  }
+footer .content-wrapper{
+  display:flex;
+  justify-content: center;
+  width: 50%;
+  align-items:center;
+  margin:0;
+  flex-wrap:wrap;
+}
 
-  .main-content .content-wrapper {
-    display:flex;
-    flex-direction: column;
-  }
+footer .footer-content,
+footer copyright {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  margin:0;
+}
 
-  .main-content .selections {
-    display:flex;
-    justify-content: center;
-    width: 90%;
-  }
+footer h4,
+footer p {
+  font-size:0.75em;
+}
 
-    /*width: 90%;
-    display:flex;
-   */
-  
-
-
-  .main-content .by-condition select{
-    width:80%;
-  }
-  
-  footer {
-    display:flex;
-    justify-content:center;
-    padding-top: 20px;
-    height: 200px;
-    background-color: rgb(226, 154, 226);
-  }
-  
-  header h1 {
+header h1 {
   font-family: "Alata", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #152A3E;
   font-size: 1em;
   margin-left: 10%;
-  }
-  
-  h3,
-  h4,
-  label,
-  option,
-  p {
-    font-family: "Nunito Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100,
-      "YTLC" 500;
-    color: #152A3E;
-    text-decoration: none;
-  }
+}
+
+h3,
+h4,
+label,
+option,
+p {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+  color: #152A3E;
+  text-decoration: none;
+}
 
 /* ==========================================================================
    Helper classes
@@ -285,9 +305,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -298,6 +318,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -357,4 +378,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
