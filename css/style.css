@@ -87,6 +87,23 @@
   /* ==========================================================================
      Mobile first
      ========================================================================== */
+  /*--GENERAL STYLES--*/
+  h3,
+  h4,
+  label,
+  option,
+  p {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+    color: #152A3E;
+    text-decoration: none;
+  }
+  
   html {
     font-size: 1rem;
     height:100%;
@@ -99,90 +116,104 @@
     box-sizing: border-box;
     width: 100%;
     height:100%;
-    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    margin: 0;
   }
   
   header {
     display:flex;
     background: rgb(232, 245, 173);
+    flex-basis: 150px;
+  }
+
+  .header .content-wrapper{
+    display:flex;
+    justify-content: center;
+    text-align:center;
+    flex-direction:column;
   }
   
   main {
     display:flex;
-  }
-  
-  .explanation {
-    background-color: rgb(184, 248, 184);
-  }
-  
-  .main-content {
-    background-color: rgb(170, 224, 243);
-  }
-  
-  footer{
-    display:flex;
-    background-color: rgb(226, 154, 226);
-  }
-  /*
-  header,
-  .explanation {
-    display: flex;
-    justify-content: center;
-  }
-  
-  header .content-wrapper,
-  .explanation .content-wrapper,
-  .main-content .content-wrapper,
-  footer .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-    margin: 0;
+    flex-basis: 550px;
   }
   
   .explanation {
     display: flex;
-    background-color: rgb(184, 248, 184);
-    height: 100px;
+    background: url('../img/pexels-pixabay-415071.jpg')  rgb(184, 248, 184) no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-basis: 400px;
+    text-align:center;
+    justify-content:center;
   }
-  
-  .explanation h3 {
-    text-align: center;
-    font-size: 0.75em;
-    width: 60%;
-    margin-left: 3%;
-  }
-  
-  .main-content {
-    display:flex;
-    justify-content:flex-start;
-    background-color: rgb(170, 224, 243);
-    height: 200px;
-  }
-  
-  .main-content .content-wrapper {
-    width:65%;
-    align-items: center;
-  }
-  
-  .main-content .content-wrapper .selections,
-  .main-content .content-wrapper .guides {
+
+
+  .explanation .content-wrapper {
     display: flex;
     flex-direction:column;
-    justify-content: center;
-    text-align: center;
-    width: 80%;
-    margin: 0;
+  }
+
+  .explanation h3{
+    width:80%;
+    margin-left:10%;
+    font-size: 1em;
   }
   
-  .main-content .content-wrapper .guides h3{
-    font-size: 0.9em;
+  .main-content {
+    background-color: rgb(170, 224, 243);
+    flex-basis: 150px;
+    display: flex;
+    border: 3px dotted green;
   }
+
+  .main-content .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 3px dotted red;
+    width: 100%;
+  }
+  
+  .main-content .content-wrapper .selections{
+    flex-basis: 125px;
+  }
+
+  .main-content .content-wrapper .selections,
+  .main-content .content-wrapper .guides {
+    border: 3px dotted grey;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content .content-wrapper .selections label{
+    font-size: 1em;
+    margin-left: 10%;
+  }
+
+  .main-content .content-wrapper .selections select{
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .main-content .content-wrapper .guides {
+    margin-left: 5%;
+    flex-basis: 175px;
+  }
+
+  .main-content .content-wrapper .guides h3{
+    font-size: 1em;
+  }
+
+  footer{
+    border: purple dotted 3px;
+    display:flex;
+    flex-basis: 200px;
+    background-color: rgb(226, 154, 226);
+    padding: 20px 50px;
+  }
+  /*
+
   
   footer {
     display: flex;
@@ -221,24 +252,10 @@
     color: #152A3E;
     font-size: 1em;
     margin-left: 10%;
-  }
+  }*/
   
-  h3,
-  h4,
-  label,
-  option,
-  p {
-    font-family: "Nunito Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100,
-      "YTLC" 500;
-    color: #152A3E;
-    text-decoration: none;
-  }
-  */
+  
+  
   /* ==========================================================================
      Helper classes
      ========================================================================== */
