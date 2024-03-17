@@ -91,6 +91,7 @@
   h3,
   h4,
   label,
+  select,
   option,
   p {
     font-family: "Nunito Sans", sans-serif;
@@ -122,9 +123,10 @@
   
   header {
     display:flex;
-    background: rgb(248, 255, 216);
+    background: rgb(18, 0, 89);
     height: 200px;
     flex-basis: 200px;
+    color: #e2e3ed;
   }
 
   .header .content-wrapper{
@@ -138,14 +140,30 @@
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #152A3E;
-    font-size: 1em;
-    margin-left: 10%;
+    color: #e2e3ed;
+    font-size: 2em;
+    margin-left: 3%;
+  }
+
+  header h1 i{
+    padding-right: 12px;
   }
   
   header nav ul {
     list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1em;
+    margin: 0;
+    padding:0 0 10px 0;
+    }
+
+  header a, 
+  header p{
+    color: #e2e3ed;
   }
+
   main {
     display:flex;
     flex-basis: 550px;
@@ -174,7 +192,7 @@
   }
   
   .main-content {
-    background-color: rgb(216, 240, 249);
+    background-color: #f7f5e1;
     flex-basis: 150px;
     display: flex;
     border: 3px dotted green;
@@ -193,7 +211,7 @@
 
   .main-content .content-wrapper .selections,
   .main-content .content-wrapper .guides {
-    border: 3px dotted grey;
+    /*border: 3px dotted grey;*/
     display: flex;
     flex-direction: column;
   }
@@ -210,7 +228,7 @@
   }
   
   .main-content .content-wrapper .guides {
-    margin-left: 5%;
+    margin: 0 7%;
     flex-basis: 175px;
   }
 
