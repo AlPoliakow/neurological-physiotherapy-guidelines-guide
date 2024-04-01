@@ -133,18 +133,18 @@ h2 {
 header {
   display: flex;
   justify-content: center;
-  padding: 5px 0;
   background: rgb(18, 0, 89);
   color: #e2e3ed;
   border: yellow 2px dotted;
 }
 
-.header .content-wrapper {
+header .content-wrapper {
   display: flex;
   justify-content: center;
   margin: 0;
   align-items: center;
   flex-flow: row wrap;
+  margin: 10px 0 20px 0;
 }
 
 .header .header-divider {
@@ -160,7 +160,7 @@ header h1 {
   color: #e2e3ed;
   font-size: 2.3em;
   width: 100%;
-  margin-left: 3%;
+  margin:0 0 10px 3%;
 }
 
 header h1 i {
@@ -190,13 +190,16 @@ header nav ul li a {
 main .hero {
   display: flex;
   justify-content: center;
-  min-height: 400px;
-  position: relative;
+  background: url('../img/pexels-ricky-esquivel-1683345.jpg') rgb(39, 168, 133) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+  /*position: relative;*/
   width: 100;
 }
 
 
-.hero::before {
+/*.hero::before {
   content: "";
   background: url('../img/pexels-pixabay-415071.jpg') rgb(184, 223, 247) no-repeat;
   background-size: cover;
@@ -208,23 +211,23 @@ main .hero {
   bottom: 0px;
   left: 0px;
   opacity: 0.2;
-}
+}*/
 
 main .hero .content-wrapper {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 30px 0 0 5%;
-  width: 90%;
+  padding-top: 10px; 
 }
 
 main .hero h2 {
-  font-size: 2em;
-  color: black;
-  font-family: "Caveat", cursive;
-  font-weight: 900;
+  font-size: 1.75em;
+  color:  black;
+  /*font-family: "Caveat", cursive;*/
+  font-weight: 600;
   text-transform: uppercase;
   font-style: none;
+  margin:15px 0;
 }
 
 main .hero h3 {
@@ -233,20 +236,19 @@ main .hero h3 {
   font-family: "Caveat", cursive;
   font-weight: 900;
   text-transform: uppercase;
+  margin:0;
 }
 
 .main-content {
   flex-basis: 150px;
   display: flex;
   justify-content: center;
-  border-bottom: black dotted 4px;
 }
 
 .main-content .content-wrapper {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin-left: 5%;
 }
 
 /*.main-content .content-wrapper .selections {
@@ -266,7 +268,6 @@ main .hero h3 {
 
 .main-content .content-wrapper .selections select {
   width: 80%;
-
   margin-bottom: 30px;
 }
 
@@ -279,47 +280,63 @@ main .hero h3 {
   margin: 0;
 }
 
+.main-content .result {
+  border: 3px dotted black;
+  padding: 10px 5px;
+}
 .main-content .content-wrapper .result a {
   margin-bottom: 20px;
 }
 
-.explanation {
+#about {
   display: flex;
-  min-height: 300px;
+  /*min-height: 300px;*/
   justify-content: center;
 }
 
 
-.explanation .content-wrapper {
+#about .content-wrapper {
   display: flex;
   flex-direction: column;
   width: 90%;
   margin-left: 3%;
 }
 
-.explanation article {
+/*#about article {
   width: 90%;
-}
+}*/
 
-.explanation h2 {
-  margin-bottom: 0;
+#about h2 {
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.explanation h4 {
+#about h4 {
   font-weight: 650;
 }
 
-.explanation p,
-.explanation li {
+#about p,
+#about li {
   margin: 0;
 }
 
-.explanation .add {
+#about .add {
   margin-bottom: 30px;
 }
 
+#contact{
+  display:flex;
+  justify-content: center;
+}
 
+#contact .content-wrapper{
+  margin-bottom: 30px; 
+}
+
+#contact h2{
+  margin-top: 20px; 
+  text-transform: uppercase;
+}
 
 footer {
   display: flex;
