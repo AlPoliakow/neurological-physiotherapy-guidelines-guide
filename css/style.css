@@ -88,6 +88,21 @@ textarea {
      Mobile first
      ========================================================================== */
 /*--GENERAL STYLES--*/
+
+
+html {
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-size: 1em;
+  background-color: #f7f5e1;
+  width: 100%;
+  height: 100%;
+}
+
 h2,
 h3,
 h4,
@@ -107,46 +122,35 @@ li {
   text-decoration: none;
 }
 
-h2{
-  font-size: 1.75em; 
+h2 {
+  font-size: 1.75em;
 }
 
-html {
-  font-size: 1rem;
-  height: 100%;
-  width: 100%;
+.content-wrapper {
+  width: 90%;
 }
 
-body {
-  font-size: 1em;
-  background-color: #f7f5e1;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.content-wrapper{
-  width:90%;
-  margin-left: 5%;
-}
 header {
   display: flex;
-  justify-content:center;
+  justify-content: center;
+  padding: 5px 0;
   background: rgb(18, 0, 89);
-  height: 200px;
   color: #e2e3ed;
+  border: yellow 2px dotted;
 }
 
 .header .content-wrapper {
   display: flex;
   justify-content: center;
-  text-align: center;
+  margin: 0;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header .header-divider {
-  width:100%;
+  width: 100%;
+  height: 1px;
+  color: #152A3E;
 }
 
 header h1 {
@@ -154,8 +158,8 @@ header h1 {
   font-weight: 400;
   font-style: normal;
   color: #e2e3ed;
-  font-size: 2em;
-  width:100%;
+  font-size: 2.3em;
+  width: 100%;
   margin-left: 3%;
 }
 
@@ -164,7 +168,8 @@ header h1 i {
 }
 
 header nav {
-  width:100%;
+  width: 100%;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -172,57 +177,48 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  font-size: 1em;
   margin: 0;
-  padding: 0 0 10px 0;
+  padding-left: 0;
 }
 
-header a,
-header p {
+header nav ul li a {
+  font-size: 1em;
   color: #e2e3ed;
-  /*color: #e8e7c4;*/
 }
 
-/*.content-wrapper {
-  margin-left:5%;
-}*/
-
-main {
-  display: flex;
-  flex-basis: 550px;
-}
-
+/*---MAIN STYLES---*/
 main .hero {
+  display: flex;
+  justify-content: center;
   min-height: 400px;
   position: relative;
   width: 100;
-    /*flex-basis: 100px;*/
 }
 
 
 .hero::before {
-    content: "";
-    background: url('../img/pexels-pixabay-415071.jpg') rgb(184, 223, 247) no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    flex-basis: 100px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.2;
-  }
+  content: "";
+  background: url('../img/pexels-pixabay-415071.jpg') rgb(184, 223, 247) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  flex-basis: 100px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
 
-  main .hero .content-wrapper{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding:30px 0 0 5%;
-    width: 90%;
-  }
+main .hero .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 30px 0 0 5%;
+  width: 90%;
+}
 
-main .hero h2{
+main .hero h2 {
   font-size: 2em;
   color: black;
   font-family: "Caveat", cursive;
@@ -242,7 +238,7 @@ main .hero h3 {
 .main-content {
   flex-basis: 150px;
   display: flex;
-  border-bottom: black dotted 4px; 
+  border-bottom: black dotted 4px;
 }
 
 .main-content .content-wrapper {
@@ -269,8 +265,8 @@ main .hero h3 {
 
 .main-content .content-wrapper .selections select {
   width: 80%;
- 
-  margin-bottom: 30px; 
+
+  margin-bottom: 30px;
 }
 
 .main-content .content-wrapper .guides {
@@ -282,13 +278,13 @@ main .hero h3 {
   margin: 0;
 }
 
-.main-content .content-wrapper .result a{
-  margin-bottom: 20px; 
+.main-content .content-wrapper .result a {
+  margin-bottom: 20px;
 }
 
 .explanation {
   display: flex;
-  min-height: 300px; 
+  min-height: 300px;
   justify-content: center;
 }
 
@@ -300,26 +296,26 @@ main .hero h3 {
   margin-left: 3%;
 }
 
-.explanation article{
-  width: 90%; 
+.explanation article {
+  width: 90%;
 }
 
 .explanation h2 {
-  margin-bottom:0;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
-.explanation h4{
+.explanation h4 {
   font-weight: 650;
 }
 
 .explanation p,
-.explanation li{
-  margin:0;
+.explanation li {
+  margin: 0;
 }
 
 .explanation .add {
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 
@@ -332,15 +328,16 @@ footer {
   padding: 20px 50px;
 }
 
-footer p{
+footer p {
   color: #e2e3ed;
-  font-size: 0.9em; 
+  font-size: 0.9em;
 }
 
-footer .copyright{
-  margin-top: 40px; 
+footer .copyright {
+  margin-top: 40px;
   text-align: center;
 }
+
 /*
 
   
@@ -462,28 +459,41 @@ footer .copyright{
      ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /*--General styles--*/
+
+  /*--General styles TABLET--*/
   .content-wrapper {
-    max-width: 700px;
+    max-width: 648px;
   }
-/*--Header Styles--*/
-header {
-  display:flex;
-  justify-content: center;
-}
 
-header .content-wrapper{
-  width: 100%;
-  justify-content: space-between;
-}
+  /*--Header Styles TABLET--*/
+  header {
+    padding: 50px 0;
+  }
 
-header h1{
-  width: 49%;
-}
+  header .content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
-header nav{
-  width: 40%;
-}
+  header .header-divider {
+    display: none;
+  }
+
+  header h1 {
+    width: 45%;
+    font-size: 1.85em;
+    margin:0;
+  }
+
+  header nav {
+    width: 45%;
+    margin: 10px 0 0 0;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
 }
 
 @media print,
