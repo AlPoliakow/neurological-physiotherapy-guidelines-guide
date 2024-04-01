@@ -94,7 +94,8 @@ h4,
 label,
 select,
 option,
-p {
+p,
+li {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -106,6 +107,10 @@ p {
   text-decoration: none;
 }
 
+h2{
+  font-size: 1.75em; 
+}
+
 html {
   font-size: 1rem;
   height: 100%;
@@ -113,8 +118,8 @@ html {
 }
 
 body {
-  border: dotted black 3px;
   font-size: 1em;
+  background-color: #f7f5e1;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
@@ -223,16 +228,14 @@ main .hero h3 {
 }
 
 .main-content {
-  background-color: #f7f5e1;
   flex-basis: 150px;
   display: flex;
-  border: 3px dotted green;
+  border-bottom: black dotted 4px; 
 }
 
 .main-content .content-wrapper {
   display: flex;
   flex-direction: column;
-  /*border: 3px dotted red;*/
   width: 90%;
   margin-left: 5%;
 }
@@ -243,7 +246,6 @@ main .hero h3 {
 
 .main-content .content-wrapper .selections,
 .main-content .content-wrapper .guides {
-  /*border: 3px dotted grey;*/
   display: flex;
   flex-direction: column;
 }
@@ -251,17 +253,15 @@ main .hero h3 {
 .main-content .content-wrapper .selections label {
   padding-top: 10px;
   font-size: 1em;
-  /*margin-left: 10%;*/
 }
 
 .main-content .content-wrapper .selections select {
   width: 80%;
-  /*margin-left: 10%;*/
+ 
   margin-bottom: 30px; 
 }
 
 .main-content .content-wrapper .guides {
-  /*margin: 0 7%;*/
   flex-basis: 150px;
 }
 
@@ -276,11 +276,7 @@ main .hero h3 {
 
 .explanation {
   display: flex;
-  background:rgb(184, 248, 184) no-repeat;
-  background-size: cover;
-  background-position: center;
-  flex-basis: 400px;
-  text-align: center;
+  min-height: 300px; 
   justify-content: center;
 }
 
@@ -288,26 +284,51 @@ main .hero h3 {
 .explanation .content-wrapper {
   display: flex;
   flex-direction: column;
+  width: 90%;
+  margin-left: 3%;
 }
 
-.explanation h3 {
-  width: 80%;
-  margin-left: 10%;
-  font-size: 1em;
+.explanation article{
+  width: 90%; 
 }
 
-main #contact {
-  margin-left: 5%;
+.explanation h2 {
+  margin-bottom:0;
+  text-transform: uppercase;
 }
+
+.explanation h4{
+  font-weight: 650;
+}
+
+.explanation p,
+.explanation li{
+  margin:0;
+}
+
+.explanation .add {
+  margin-bottom: 30px; 
+}
+
+
 
 footer {
-  border: purple dotted 3px;
   display: flex;
   flex-basis: 200px;
-  background-color: #f7f5e1;
+  color: #e2e3ed;
+  background: rgb(18, 0, 89);
   padding: 20px 50px;
 }
 
+footer p{
+  color: #e2e3ed;
+  font-size: 0.9em; 
+}
+
+footer .copyright{
+  margin-top: 40px; 
+  text-align: center;
+}
 /*
 
   
@@ -428,8 +449,29 @@ footer {
      Modify as content requires.
      ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*--General styles--*/
+  .content-wrapper {
+    max-width: 700px;
+  }
+/*--Header Styles--*/
+header {
+  display:flex;
+  justify-content: center;
+}
+
+header .content-wrapper{
+  width: 100%;
+  justify-content: space-between;
+}
+
+header h1{
+  width: 49%;
+}
+
+header nav{
+  width: 40%;
+}
 }
 
 @media print,

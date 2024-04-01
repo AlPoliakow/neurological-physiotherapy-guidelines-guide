@@ -42,15 +42,15 @@
       <nav>
         <ul>
           <li><a href="#home" rel="noopener">Home</a></li>
-          <li><a href="#about" rel="noopener">About</a></li>
           <li><a href="#search" rel="noopener">Search</a></li>
+          <li><a href="#about" rel="noopener">About</a></li>
           <li><a href="#contact" rel="noopener">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="content-wrapper">
         <h2>Because we're Physiotherapists,<br>not Pirates</h2>
         <h3>and they aren't more like *Guidelines* anyway</h3>
@@ -58,8 +58,9 @@
     </section>
     <section class="main-content">
       <div class="content-wrapper">
-        <div class="selections">
-          <label for="condition">Clinical Practice Guidelines by condition:</label>
+        <div class="selections" id="search">
+          <h2>Clinical Practice Guidelines</h2>
+          <label for="condition">Search by condition:</label>
           <select name="condition" id="condition" placeholder="Please select a condition">
             <option value="sci">Spinal Cord Injury</option>
             <option value="ms">Multiple Sclerosis</option>
@@ -75,42 +76,41 @@
         </div>
       </div>
     </section>
-    <section class="explanation id=" about">
+    <section class="explanation" id="about">
       <div class="content-wrapper">
-        <h3>A key part of evidence-based practice is being able to access appropriate evidence.</h3>
-        <h3>Let me remove barriers to you so that you can do it for others.</h3>
-        <p> 🏴‍☠️ </p>
-        <article>
-          <p>Inclusion criteria:</p>
+        <h2>About</h2>
+        <article class="why">
+          <h4>Why?</h4>
+          <p>A key part of evidence-based practice is being able to access the highest level of appropriate
+            evidence.<br><br>
+            You're already busy enough as it is, so here is the relevant Level 1 Evidence available at a single click.
+          </p>
+        </article>
+        <article class="what">
+          <h4>What?</h4>
+          <p>To be included, clinical practice guidelines need to:</p>
           <ul>
-            <li>Published after 2010</li>
-            <li>Includes therapeuritc intervention within the scope of an Australian Physiotherapist</li>
+            <li>evaluate therapeutic intervention within the scope of an Australian Physiotherapist and,</li>
+            <li>be published after 2010</li>
           </ul>
         </article>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="content-wrapper">
-        <h3>Want to contribute?</h3>
-        <div class="contact-info">
-          <h3>Email Me <a href="mailto:mx.al.poliakow@gmail.com"><i class="fa-regular fa-envelope"></i></a></h3>
-          <address>
-            <p>mx.al.poliakow@gmail.com</p>
-          </address>
-          <p>Submit a pull request at <a href="https://github.com/AlPoliakow/guidelines-guide/" target="_blank" rel="noopener"><i
-                class="fa-brands fa-github"></i></a></p>
-        </div>
+        <article class="add" id="contact">
+          <h4> Something missing?</h4>
+          <p>If there's another Clinical Practice Guideline you think is relevant, <br>email me <a
+              href="mailto:mx.al.poliakow@gmail.com"><i class="fa-regular fa-envelope"></i>mx.al.poliakow@gmail.com</a> 
+            <br>or submit a pull request <a href="https://github.com/AlPoliakow/guidelines-guide/" target="_blank"
+              rel="noopener"><i class="fa-brands fa-github"></i></a></p>
+        </article>
       </div>
     </section>
   </main>
   <footer>
     <div class="content-wrapper parent">
       <div class="footer-content">
-        <p class="child">⚠ Disclaimer: <br>
-          Clinical Guidelines remain the intellectual property of those who created them.
-          <br><br>
-          This is not clinical advice, merely a simpler way to access the relevant information.
-        </p>
+        <p class="child">⚠ Disclaimer:
+          <br>
+          This is not clinical advice, and clinical reasoning is still required. <br>
+          All links are to third party content and third parties remain the owner of the intellectual property.
         </p>
       </div>
       <div class="copyright">
