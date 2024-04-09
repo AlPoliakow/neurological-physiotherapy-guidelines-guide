@@ -26,6 +26,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Alata&family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Shadows+Into+Light&display=swap"
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <!--Icons-->
   <!-- FontAwesome CDN version 5.5 -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -36,11 +37,11 @@
 <body class="parent">
   <header>
     <div class="content-wrapper">
-      <h1 class="child"><i class="fa-solid fa-book"></i> Guidelines Guide</h1><!--Logo?-->
+      <i class="fa-solid fa-book"></i>
+      <h1 class="child">Neurological Physiotherapy<br>Guidelines Guide</h1><!--Logo?-->
       <div class="header-divider"></div>
       <nav>
         <ul>
-          <li><a href="#home" rel="noopener">Home</a></li>
           <li><a href="#search" rel="noopener">Search</a></li>
           <li><a href="#about" rel="noopener">About</a></li>
           <li><a href="#contact" rel="noopener">Contact</a></li>
@@ -51,12 +52,12 @@
   <main>
     <section class="hero" id="home">
       <div class="content-wrapper">
-        <h2>Finding high level, appropriate, evidence for you</h2>
+        <h2>Finding high-level, appropriate evidence for you</h2>
       </div>
     </section>
     <section class="main-content">
       <div class="content-wrapper">
-        <div class="selections" id="search">
+        <div id="search">
           <h2>Clinical Practice Guidelines</h2>
           <label for="condition">Search by condition:</label>
           <select name="condition" id="condition" placeholder="Please select a condition">
@@ -68,7 +69,6 @@
           </select>
         </div>
         <div class="guides">
-          <h3>Physiotherapy Clinical Practice Guidelines:</h3>
           <p class="result"> <em>Select a condition to see the relevant guidelines</em><br><br><br><br><br>
           </p>
         </div>
@@ -77,26 +77,43 @@
     <section id="about">
       <div class="content-wrapper">
         <h2>About</h2>
-        <p>Providing easy access to clinical practice guidelines, published after 2010, that evaluate therapeutic intervention within the scope of an Australian Physiotherapist.</p>
+        <div class="about-paragraph">
+          <h4>Why?</h4>
+          <p>To provide easy access to clinical practice guidelines to facilitate evidence based practice.</p>
+          <h4>What?</h4>
+          <p>Clinical Practice Guidelines published after 2010, evaluating therapeutic intervention within the scope of
+            an
+            Australian Physiotherapist.</p>
+          <h4>Who?</h4>
+          <p>A qualified Physiotherapist who worked in the Neurological field.</p>
+        </div>
+        <div class="disclaimer">
+          <p>⚠ Disclaimer:<br>
+            This is not clinical advice, and clinical reasoning is still required.<br>
+            Efforts are made to ensure the list is inclusive but it may not be exhaustive.<br>
+            All links are to third party content and third parties remain the owner of the intellectual property.</p>
+        </div>
       </div>
     </section>
     <section id="contact">
       <div class="content-wrapper">
-        <h2>Contact</h2>
-        <p>If there's another Clinical Practice Guideline you think is relevant, email me <a
-            href="mailto:mx.al.poliakow@gmail.com"><i class="fa-regular fa-envelope"></i>mx.al.poliakow@gmail.com</a> 
-          or submit a pull request <a href="https://github.com/AlPoliakow/guidelines-guide/" target="_blank"
-            rel="noopener"><i class="fa-brands fa-github"></i></a></p>
+        <h2>Something to say?</h2>
+        <h4>Is there another Clinical Practice Guideline you think is relevant?</h4>
+        <!---->
+          <input type="text" name="name" value="Enter the link here">
+        <h4>Something else?</h4>
+          <p>Email me:<a href="mailto:mx.al.poliakow@gmail.com"><!--<i class="fa-regular fa-envelope">--></i> mx.al.poliakow@gmail.com</a></p>
+            <!--<a href="https://github.com/AlPoliakow/guidelines-guide/" target="_blank"
+            rel="noopener"><i class="fa-brands fa-github"></i></a>-->
       </div>
     </section>
   </main>
   <footer>
-    <div class="content-wrapper parent">
+    <div class="content-wrapper">
       <div class="footer-content">
-        <p class="child">⚠ Disclaimer:
-          This is not clinical advice, and clinical reasoning is still required. 
-          All links are to third party content and third parties remain the owner of the intellectual property.
-        </p>
+        <h5>I acknowledge the Traditional Custodians of Country throughout Australia and their connections to land, sea
+          and community. I pay my respect to their Elders past and present and extend that respect to all Aboriginal and
+          Torres Strait Islander peoples.</h5>
       </div>
       <div class="copyright">
         <p>Copyright 2024 | Al Poliakow </p>
