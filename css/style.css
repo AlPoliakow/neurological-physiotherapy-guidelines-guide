@@ -123,7 +123,7 @@ li {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.75em;
 }
 
 .content-wrapper {
@@ -267,6 +267,9 @@ main .hero h2 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
 }
 
+.main-content h2{
+  text-align:center;
+}
 .main-content .content-wrapper #search,
 .main-content .content-wrapper .guides {
   display: flex;
@@ -326,10 +329,10 @@ main .hero h2 {
   margin-bottom: 2.5em;
 }
 
-
 #about h2 {
   text-transform: uppercase;
   flex-basis: 100%;
+  text-align:center;
 }
 
 #about p {
@@ -359,8 +362,25 @@ main .hero h2 {
 }
 
 #contact h2{
-  margin-top: 20px; 
+  margin: 20px 0 0 0; 
   text-transform: uppercase;
+  text-align:center;
+  padding:0;
+}
+
+#contact .contact-form{
+  display:flex;
+  flex-direction:column;
+  border: 4px white dotted;
+}
+
+#contact .contact-form #email{
+  margin-bottom:1.5em;
+}
+
+#contact button {
+  width:30%;
+  margin-top:1.5em;
 }
 
 footer {

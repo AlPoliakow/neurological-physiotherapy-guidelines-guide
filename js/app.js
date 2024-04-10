@@ -1,6 +1,12 @@
 const conditionList = document.querySelector("#condition");
 const country = document.querySelector("country");
 const result = document.querySelector(".result");
+const aboutMeHeader = document.querySelector(".about-me-header");
+const aboutMeParagraph = document.querySelector(".about-me-paragraph");
+
+aboutMeHeader.addEventListener("click", function () {
+  aboutMeParagraph.innerText = `I'm a qualified Physiotherapist with 5 years experience working in the Neurological Field. I continue to work in research and want to continue to contribute to evidence based practice.`
+});
 
 conditionList.addEventListener("change", function (e) {
   condition = e.target.value;
@@ -25,7 +31,7 @@ const updateResultsDiv = function () {
     <a href="https://www.nice.org.uk/guidance/ng220" target="_blank" rel="noopener noreferer">National Institute for Health Care Excellence (UK):Multiple sclerosis in adults: management 2022</a><br><br>
     <a href="https://rehabnurse.org/uploads/about/cpgms.pdf" target="_blank" rel="noopener noreferer">Nursing Management of the Patient with Multiple Scleorisis (AANM, ATN and IOMSN Clinical Practice Guideline Series) - Physiotherapy relevant information p33-34</a><br><br>
     <a href="https://actt.albertadoctors.org/media/hcgjedss/depression-in-ms-cpg.pdf" target="_blank" rel="noopener noreferer">Depression in Multiple Sclerosis 2015(Physiotherapy relevant information 4th non-pharmacotherapy recommendation)</a>`;
-   
+
     console.log("MS selected");
   } else if (condition === "cp") {
     result.innerHTML = `<a href="https://www.nice.org.uk/guidance/ng62" target="_blank" rel="noopener noreferer">National Institute for Health Care Excellence (UK): Cerebral Palsy in Under 25s: assessment and management - 2017</a><br>
@@ -34,7 +40,7 @@ const updateResultsDiv = function () {
     Single Event Multi-Level Surgeries for Children, Adolescents, and Young Adults with Cerebral Palsy or Other Similar Neuromotor Conditions - 2019</a><br><br>
     <a href="https://www.nice.org.uk/guidance/ng119" target="_blank" rel="noopener noreferer">National Institute for Health Care Excellence (UK): Cerebral Palsy in Under Adults - 2019</a><br><br>
     <a href="https://onlinelibrary.wiley.com/doi/10.1111/dmcn.15055" target="_blank" rel="noopener noreferer">Interventions to improve physical function for children and young people with cerebral palsy: international clinical practice guideline - 2021</a>`;
-    
+
     console.log("CP selected");
   } else if (condition === "cva") {
     result.innerHTML = `<a href="https://journals.lww.com/jnpt/fulltext/2020/01000/clinical_practice_guideline_to_improve_locomotor.8.aspx" target="_blank" rel="noopener noreferer">Clinical Practice Guideline to Improve Locomotor Function Following Chronic Stroke, Incomplete Spinal Cord Injury, and Brain Injury 2020</a><br><br>
@@ -56,7 +62,7 @@ const updateResultsDiv = function () {
     <a href="https://www.kngf.nl/binaries/content/assets/kennisplatform/onbeveiligd/guidelines/stroke_practice_guidelines_2014.pdf" target="_blank" rel="noopener noreferer">KNGF Guideline
     Stroke 2014</a>`;
     console.log("CVA selected");
-  } else if (condition === "pd"){
+  } else if (condition === "pd") {
     result.innerHTML = `<a href="https://www.nice.org.uk/guidance/ng71" target="_blank" rel="noopener noreferer">National Institute for Health Care Excellence (UK):Parkinson's disease in adults 2017</a>`;
     console.log("PD selected");
   }
@@ -69,3 +75,4 @@ const updateResultsDiv = function () {
 //https://uems-prm.eu/main-ms-rehabilitation-guidelines/
 //https://www.mscare.org/page/practice_guidelines
 //<a href="" target="_blank" rel="noopener noreferer">Australian CVA Clinical Practice Guidelines *YEAR*</a>
+
