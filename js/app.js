@@ -27,19 +27,22 @@ const updateResultsDiv = function () {
     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6241225/" target="_blank" rel="noopener noreferer">Identification and Management of Cardiometabolic Risk after Spinal Cord Injury: Clinical Practice Guideline for Health Care Providers 2018</a>`;
     console.log("SCI selected");
   } else if (condition === "ms") {
-    result.innerHTML = `<a href="https://www.nice.org.uk/guidance/ng220/chapter/Recommendations#ms-symptom-management-and-rehabilitation" target="_blank" rel="noopener noreferer">UK Multiple Sclerosis Clinical Practice Guidelines 2022</a><br><br>
-    <a href="https://www.nice.org.uk/guidance/ng220" target="_blank" rel="noopener noreferer">National Institute for Health Care Excellence (UK):Multiple sclerosis in adults: management 2022</a><br><br>
-    <a href="https://rehabnurse.org/uploads/about/cpgms.pdf" target="_blank" rel="noopener noreferer">Nursing Management of the Patient with Multiple Scleorisis (AANM, ATN and IOMSN Clinical Practice Guideline Series) - Physiotherapy relevant information p33-34</a><br><br>
-    <a href="https://actt.albertadoctors.org/media/hcgjedss/depression-in-ms-cpg.pdf" target="_blank" rel="noopener noreferer">Depression in Multiple Sclerosis 2015(Physiotherapy relevant information 4th non-pharmacotherapy recommendation)</a>`;
+    result.innerHTML = `<a href="https://www.nice.org.uk/guidance/ng220/chapter/Recommendations#ms-symptom-management-and-rehabilitation" target="_blank" rel="noopener noreferer">Multiple Sclerosis in adults: management</a>
+    <p>2022 - National Institute for Health Care Excellence (UK)</p>
+    <a href="https://rehabnurse.org/uploads/about/cpgms.pdf" target="_blank" rel="noopener noreferer">Nursing Management of the Patient with Multiple Scleorisis</a>
+    <p>2011 - AANM, ATN and IOMSN Clinical Practice Guideline Series<br><span>Physiotherapy relevant information p33-34</span></p>
+    <a href="https://actt.albertadoctors.org/media/hcgjedss/depression-in-ms-cpg.pdf" target="_blank" rel="noopener noreferer">Identification and management of depression in Multiple Sclerosis Clinical Practice Guideline</a>
+    <p>2015 - Toward Optimized Practice <br><span>Physiotherapy relevant information p3</span>`;
 
     console.log("MS selected");
   } else if (condition === "cp") {
-    result.innerHTML = `<a href="https://www.nice.org.uk/guidance/ng62" target="_blank" rel="noopener noreferer">National Institute for Health Care Excellence (UK): Cerebral Palsy in Under 25s: assessment and management - 2017</a><br>
-    <br>
+    result.innerHTML = `<a href="https://www.nice.org.uk/guidance/ng62" target="_blank" rel="noopener noreferer">Cerebral Palsy in Under 25s: assessment and management</a>
+    <p>2017 - National Institute for Health Care Excellence (UK)</p>
     <a href="https://search.pedro.org.au/search-results/record-detail/56962" target="_blank" rel="noopener noreferer">Evidence-Based Clinical Care Guideline for Physical Therapy Management of
-    Single Event Multi-Level Surgeries for Children, Adolescents, and Young Adults with Cerebral Palsy or Other Similar Neuromotor Conditions - 2019</a><br><br>
-    <a href="https://www.nice.org.uk/guidance/ng119" target="_blank" rel="noopener noreferer">National Institute for Health Care Excellence (UK): Cerebral Palsy in Under Adults - 2019</a><br><br>
-    <a href="https://onlinelibrary.wiley.com/doi/10.1111/dmcn.15055" target="_blank" rel="noopener noreferer">Interventions to improve physical function for children and young people with cerebral palsy: international clinical practice guideline - 2021</a>`;
+    Single Event Multi-Level Surgeries for Children, Adolescents, and Young Adults with Cerebral Palsy or Other Similar Neuromotor Conditions</a><p>2019 - Cincinnati Children's</p>
+    <a href="https://www.nice.org.uk/guidance/ng119" target="_blank" rel="noopener noreferer"> Cerebral Palsy in Under Adults</a>
+    <p>2019 - National Institute for Health Care Excellence (UK)</p>
+    <a href="https://onlinelibrary.wiley.com/doi/10.1111/dmcn.15055" target="_blank" rel="noopener noreferer">Interventions to improve physical function for children and young people with cerebral palsy: international clinical practice guideline - 2021</a><p>2019 - Developmental Medicine and Child Neurology</p> `;
 
     console.log("CP selected");
   } else if (condition === "cva") {
@@ -63,7 +66,8 @@ const updateResultsDiv = function () {
     Stroke 2014</a>`;
     console.log("CVA selected");
   } else if (condition === "pd") {
-    result.innerHTML = `<a href="https://www.nice.org.uk/guidance/ng71" target="_blank" rel="noopener noreferer">National Institute for Health Care Excellence (UK):Parkinson's disease in adults 2017</a>`;
+    result.innerHTML = `<a href="https://www.nice.org.uk/guidance/ng71" target="_blank" rel="noopener noreferer">Parkinson's disease in adults</a>
+    <p>2017 - National Institute for Health and Care Excellence (UK)</p>`;
     console.log("PD selected");
   }
 };
