@@ -124,6 +124,7 @@ li {
 h2 {
   font-size: 2.75em;
   margin-top:10px;
+  text-align:center;
 }
 
 .content-wrapper {
@@ -148,7 +149,6 @@ header {
 header .content-wrapper {
   display: flex;
   justify-content: center;
-  margin: 0;
   width:100%;
   align-items: center;
   flex-flow: row wrap;
@@ -191,7 +191,6 @@ header nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  width: 100%;
   margin: 0;
   padding-left: 0;
 }
@@ -220,11 +219,8 @@ main .hero {
   background-position: center;
   min-height: 200px;
   /*position: relative;*/
-  width: 100;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 10px 15px rgba(17, 24, 39, .2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
 }
-
-
 
 /*.hero::before {
   content: "";
@@ -240,7 +236,7 @@ main .hero {
   opacity: 0.2;
 }*/
 
-main .hero .content-wrapper {
+/*main .hero .content-wrapper {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -255,148 +251,79 @@ main .hero h2 {
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
-}
+}*/
 
-main .border{
-  background:rgb(18, 0, 89);
-  height:20px;
-}
-
-.main-content {
-  flex-basis: 150px;
+#search, 
+#about,
+#contact {
   display: flex;
   justify-content: center;
 }
 
-.main-content .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-}
-
-/*.main-content .content-wrapper .selections {
-  flex-basis: 70px;
-}*/
-.main-content .content-wrapper,
+#search .content-wrapper,
 #about .content-wrapper,
 #contact .content-wrapper{
+  display: flex;
+  justify-content: center;
   margin-top:40px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
 } 
 
-.main-content .content-wrapper article,
+#search .content-wrapper article,
 #about article,
 #contact article{
-  margin: 1em;
+  padding:1.5em;
 }
 
-.main-content .content-wrapper {
-  margin-top:20px;
-  display: flex;
-  flex-direction: column;
-  /*margin: 20px 0 40px 0;*/
-  width: 90%;
-  /*padding: 1em;*/
-  flex-flow: row wrap;
-  justify-content: center;
-  /*background: #ffffff;
-  border: 0.1em black solid;
-  border-radius: 1em;*/
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
+#about figure,
+#contact figure {
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin-bottom: 2em;
 }
 
-.main-content h2{
-  text-align:center;
-}
-.main-content .content-wrapper #search,
-.main-content .content-wrapper .guides {
-  display: flex;
-  flex-direction: column;
+#about img,
+#contact img{
+  height:12em;
+  overflow: hidden;
 }
 
-.main-content .content-wrapper #search label {
-  padding-top: 10px;
-  font-size: 1em;
+#about h2,
+#contact h2 {
+  text-transform: uppercase;
 }
-
-.main-content .content-wrapper #search select {
-  width: 80%;
-  margin-bottom: 30px;
-}
-
-
-.main-content .content-wrapper .guides h3 {
-  font-size: 1em;
-  margin: 0;
-}
-
-.main-content .result {
+/*---SEARCH MOBILE STYLES---*/
+#search .result {
   border: 3px dotted black;
-  padding: 10px 5px;
+  padding: 10px 10px;
 }
-.main-content .content-wrapper .result p {
+
+#search .content-wrapper .result p {
   margin: 0 0 1.5em 0;
   font-size:0.9em;
 }
 
-.main-content .content-wrapper .result a {
+#search .content-wrapper .result a {
   margin:0;
 }
 
-#about {
-  display: flex;
-  /*min-height: 300px;*/
-  justify-content: center;
-}
-
-
-#about .content-wrapper {
-  display: flex;
-  justify-content:center;
-  flex-flow: row wrap;
-  width: 90%;
-  padding: 30px 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
-}
-
-#about figure {
-  width:100%;
-  display:flex;
-  justify-content:center;
-}
-
+/*---ABOUT MOBILE STYLES---*/
 #about img{
-  height:12em;
-  overflow: hidden;
   border: 1px solid rgb(18, 0, 89);
 }
 
-#about .about-paragraph{
-  text-align:left;
-}
-
 #about h4{
-  width:100%;
   margin-bottom:0.5em;
 }
 
-#about .about-paragraph p {
-  margin-bottom: 2.5em;
-}
-
-#about h2 {
-  text-transform: uppercase;
-  flex-basis: 100%;
-  text-align:center;
-}
-
-#about p {
-  flex-basis: 100%;
-}
-
-#about p,
-#about li {
+#about p{
   margin: 0;
+}
+
+/*---CONTACT MOBILE---*/
+#contact .content-wrapper{
+  margin-bottom: 40px; 
 }
 
 #contact .disclaimer{
@@ -405,49 +332,10 @@ main .border{
   font-size: 0.75em;
 }
 
-#about .add {
-  margin-bottom: 30px;
-}
-
-#contact{
-  display:flex;
-  justify-content: center;
-}
-
-#contact .content-wrapper{
-  margin-bottom: 30px; 
-  display:flex;
-  flex-direction:column;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
-}
-
-#contact h2{
-  margin: 20px 0 1em 0; 
-  text-transform: uppercase;
-  text-align:center;
-  padding:0;
-}
-
-#contact figure {
-  width:100%;
-  display:flex;
-  justify-content:center;
-  margin-bottom: 2em;
-}
-
-#contact img{
-  height:12em;
-  overflow: hidden;
-}
-
 #contact h4{
   margin:0;
 }
 
-#contact .about-me-header{
-  margin-top: 1.5em;
-
-}
 /*#contact .contact-form{
   display:flex;
   flex-direction:column;
@@ -466,25 +354,22 @@ main .border{
 footer {
   display: flex;
   justify-content:center;
-  color: #e2e3ed;
   background: rgb(18, 0, 89);
   padding: 20px 0;
 }
 
+footer p {
+  color: #e2e3ed;
+}
 
 footer .footer-content{
   border: dotted white 2px;
   padding:1em;
 }
 
-footer h5{
+footer .footer-content p{
   margin:0;
-}
-
-footer p {
-  color: #e2e3ed;
-  font-size: 0.9em;
-  
+  font-size: 0.7em;
 }
 
 footer .copyright {
@@ -492,43 +377,9 @@ footer .copyright {
   text-align: center;
 }
 
-/*
-
-  
-  footer {
-    display: flex;
-    padding: 20px 50px;
-    height: 300px;
-    background-color: rgb(226, 154, 226);
-  }
-  
-  footer .content-wrapper{
-    display:flex;
-    justify-content: center;
-    width: 50%;
-    align-items:center;
-    margin:0;
-    flex-wrap:wrap;
-  }
-  
-  footer .footer-content,
-  footer copyright {
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:center;
-    margin:0;
-  }
-  
-  footer h4,
-  footer p {
-    font-size:0.75em;
-  }
-  
-  */
-
-
-
+footer .copyright p{
+  font-size:0.83em;
+}
 /* ==========================================================================
      Helper classes
      ========================================================================== */
