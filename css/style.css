@@ -98,7 +98,6 @@ html {
 
 body {
   font-size: 1em;
-  background-color: #f7f5e1;
   width: 100%;
   height: 100%;
 }
@@ -124,17 +123,26 @@ li {
 
 h2 {
   font-size: 2.75em;
+  margin-top:20px;
 }
 
 .content-wrapper {
   width: 90%;
 }
 
+img{
+  margin:0;
+}
+
+figure{
+  margin:0;
+}
+
 header {
   display: flex;
   justify-content: center;
   background: rgb(18, 0, 89);
-  color: #e2e3ed;
+  color:  white;
 }
 
 header .content-wrapper {
@@ -147,25 +155,31 @@ header .content-wrapper {
   margin: 10px 0 20px 0;
 }
 
+header .title{
+  width:70%;
+}
+
+header .title .gg{
+  padding-left:3em;
+}
+
 .header .header-divider {
   width: 100%;
   height: 1px;
-  color: #152A3E;
+  color: rgb(18, 0, 89);
 }
 
 header h1 {
   font-family: "Alata", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #e2e3ed;
-  font-size: 2em;
-  width: 62%;
+  font-size: 1.2em;
   margin:0;
 }
 
 header i {
-  font-size:8em;
-  padding-right:0.2em;
+  font-size:3em;
+  padding-right:0.5em;
 }
 
 header nav {
@@ -184,8 +198,8 @@ header nav ul {
 }
 
 header nav ul li a {
-  font-size: 1em;
-  color: #e2e3ed;
+  font-size: 0.8em;
+  color:  white;
   text-decoration:none;
   font-weight: 700;
 }
@@ -195,16 +209,22 @@ header nav ul li a:hover {
 }
 
 /*---MAIN STYLES---*/
+main{
+  background: white;
+}
+
 main .hero {
   display: flex;
   justify-content: center;
-  background: url('../img/pexels-pixabay-255527-2.jpg') rgb(39, 168, 133) no-repeat;
+  background: url('../img/pexels-element-digital-1370295.jpg') rgb(39, 123, 168) no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 450px;
+  min-height: 200px;
   /*position: relative;*/
   width: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 10px 15px rgba(17, 24, 39, .2);
 }
+
 
 
 /*.hero::before {
@@ -231,19 +251,22 @@ main .hero .content-wrapper {
 main .hero h2 {
   margin-top:40px;
   font-size: 2em;
-  color: rgb(18, 0, 89);
+  color: white;
   font-family: "Permanent Marker", cursive;
-
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
+}
+
+main .border{
+  background:rgb(18, 0, 89);
+  height:20px;
 }
 
 .main-content {
   flex-basis: 150px;
   display: flex;
   justify-content: center;
-  background:rgb(18, 0, 89);
 }
 
 .main-content .content-wrapper {
@@ -255,19 +278,31 @@ main .hero h2 {
 /*.main-content .content-wrapper .selections {
   flex-basis: 70px;
 }*/
+.main-content .content-wrapper,
+#about .content-wrapper,
+#contact .content-wrapper{
+  margin-top:40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
+} 
+
+.main-content .content-wrapper article,
+#about article,
+#contact article{
+  margin: 1em;
+}
 
 .main-content .content-wrapper {
+  margin-top:20px;
   display: flex;
   flex-direction: column;
-  margin: 20px 0 40px 0;
-  width: 85%;
-  display: flex;
-  padding: 1em;
+  /*margin: 20px 0 40px 0;*/
+  width: 90%;
+  /*padding: 1em;*/
   flex-flow: row wrap;
   justify-content: center;
-  background: #ffffff;
+  /*background: #ffffff;
   border: 0.1em black solid;
-  border-radius: 1em;
+  border-radius: 1em;*/
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
 }
 
@@ -313,7 +348,6 @@ main .hero h2 {
   display: flex;
   /*min-height: 300px;*/
   justify-content: center;
-  border-bottom: 3px dotted rgb(18, 0, 89);
 }
 
 
@@ -323,6 +357,19 @@ main .hero h2 {
   flex-flow: row wrap;
   width: 90%;
   padding: 30px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
+}
+
+#about figure {
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+#about img{
+  height:12em;
+  overflow: hidden;
+  border: 1px solid rgb(18, 0, 89);
 }
 
 #about .about-paragraph{
@@ -353,8 +400,10 @@ main .hero h2 {
   margin: 0;
 }
 
-#about .disclaimer{
+#contact .disclaimer{
+  margin-top:1em;
   border: 2px dotted rgb(18, 0, 89);
+  font-size: 0.75em;
 }
 
 #about .add {
@@ -370,6 +419,7 @@ main .hero h2 {
   margin-bottom: 30px; 
   display:flex;
   flex-direction:column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
 }
 
 #contact h2{
@@ -377,6 +427,18 @@ main .hero h2 {
   text-transform: uppercase;
   text-align:center;
   padding:0;
+}
+
+#contact figure {
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin-bottom: 2em;
+}
+
+#contact img{
+  height:12em;
+  overflow: hidden;
 }
 
 #contact h4{
