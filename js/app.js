@@ -1,12 +1,6 @@
 const conditionList = document.querySelector("#condition");
 const country = document.querySelector("country");
 const result = document.querySelector(".result");
-const aboutMeHeader = document.querySelector(".about-me-header");
-const aboutMeParagraph = document.querySelector(".about-me-paragraph");
-
-aboutMeHeader.addEventListener("click", function () {
-  aboutMeParagraph.innerText = `I'm a qualified Physiotherapist with 5 years experience working in the Neurological Field. I continue to work in research and want to continue to contribute to evidence based practice.`
-});
 
 conditionList.addEventListener("change", function (e) {
   condition = e.target.value;

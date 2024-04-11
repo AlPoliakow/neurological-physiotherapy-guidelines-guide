@@ -123,7 +123,7 @@ li {
 
 h2 {
   font-size: 2.75em;
-  margin-top:20px;
+  margin-top:10px;
 }
 
 .content-wrapper {
@@ -156,11 +156,11 @@ header .content-wrapper {
 }
 
 header .title{
-  width:70%;
+  width:80%;
 }
 
 header .title .gg{
-  padding-left:3em;
+  padding-left:4em;
 }
 
 .header .header-divider {
@@ -173,13 +173,12 @@ header h1 {
   font-family: "Alata", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.2em;
-  margin:0;
+  font-size: 1.4em;
+  margin:0 1em;
 }
 
 header i {
   font-size:3em;
-  padding-right:0.5em;
 }
 
 header nav {
@@ -473,13 +472,19 @@ footer {
 }
 
 
+footer .footer-content{
+  border: dotted white 2px;
+  padding:1em;
+}
+
 footer h5{
-  width:100%;
+  margin:0;
 }
 
 footer p {
   color: #e2e3ed;
   font-size: 0.9em;
+  
 }
 
 footer .copyright {
