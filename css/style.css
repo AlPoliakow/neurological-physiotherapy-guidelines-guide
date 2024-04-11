@@ -135,7 +135,6 @@ header {
   justify-content: center;
   background: rgb(18, 0, 89);
   color: #e2e3ed;
-  border: yellow 2px dotted;
 }
 
 header .content-wrapper {
@@ -188,13 +187,18 @@ header nav ul li a {
   font-size: 1em;
   color: #e2e3ed;
   text-decoration:none;
+  font-weight: 700;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline; 
 }
 
 /*---MAIN STYLES---*/
 main .hero {
   display: flex;
   justify-content: center;
-  background: url('../img/pexels-pixabay-255527.jpg') rgb(39, 168, 133) no-repeat;
+  background: url('../img/pexels-pixabay-255527-2.jpg') rgb(39, 168, 133) no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 450px;
@@ -364,16 +368,26 @@ main .hero h2 {
 
 #contact .content-wrapper{
   margin-bottom: 30px; 
+  display:flex;
+  flex-direction:column;
 }
 
 #contact h2{
-  margin: 20px 0 0 0; 
+  margin: 20px 0 1em 0; 
   text-transform: uppercase;
   text-align:center;
   padding:0;
 }
 
-#contact .contact-form{
+#contact h4{
+  margin:0;
+}
+
+#contact .about-me-header{
+  margin-top: 1.5em;
+
+}
+/*#contact .contact-form{
   display:flex;
   flex-direction:column;
   border: 4px white dotted;
@@ -386,7 +400,7 @@ main .hero h2 {
 #contact button {
   width:30%;
   margin-top:1.5em;
-}
+}*/
 
 footer {
   display: flex;
