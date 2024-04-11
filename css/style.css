@@ -387,12 +387,22 @@ main .hero h2 {
   margin-top: 1.5em;
 
 }
-/*#contact .contact-form{
+#contact .contact-form{
   display:flex;
   flex-direction:column;
+  justify-content:flex-start;
   border: 4px white dotted;
 }
 
+#contact .contact-form ul{
+  list-style:none;
+  padding:0;
+}
+
+#contact .contact-form ul li{
+  display:flex;
+  flex-direction:column;
+}
 #contact .contact-form #email{
   margin-bottom:1.5em;
 }
@@ -400,7 +410,7 @@ main .hero h2 {
 #contact button {
   width:30%;
   margin-top:1.5em;
-}*/
+}
 
 footer {
   display: flex;
