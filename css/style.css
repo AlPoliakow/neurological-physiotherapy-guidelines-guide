@@ -296,12 +296,16 @@ main .content-wrapper {
   padding: 10px 10px;
 }
 
-#search .content-wrapper .result p {
+#search .result p {
   margin: 0 0 1.5em 0;
   font-size: 0.9em;
 }
 
-#search .content-wrapper .result a {
+#search .result p span {
+  font-style:italics;
+}
+
+#search .result a {
   margin: 0;
 }
 
@@ -559,6 +563,11 @@ footer .copyright p {
   #content{
     max-width:1000px;
   }
+
+  #content .b1 #search{
+    margin:3em;
+  }
+
   #search .content-wrapper {
     width: 100%;
   }
