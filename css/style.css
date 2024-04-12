@@ -88,8 +88,6 @@ textarea {
      Mobile first
      ========================================================================== */
 /*--GENERAL STYLES--*/
-
-
 html {
   font-size: 1rem;
   height: 100%;
@@ -123,44 +121,47 @@ li {
 
 h2 {
   font-size: 2.75em;
-  margin-top:10px;
-  text-align:center;
+  margin-top: 10px;
+  text-align: center;
 }
 
-.content-wrapper {
+header .content-wrapper,
+main #content,
+footer .content-wrapper {
   width: 90%;
 }
 
-img{
-  margin:0;
+img {
+  margin: 0;
 }
 
-figure{
-  margin:0;
+figure {
+  margin: 0;
 }
 
+/*---HEADER MOBILE STYLES---*/
 header {
   display: flex;
   justify-content: center;
   background: rgb(18, 0, 89);
-  color:  white;
+  color: white;
 }
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
-  width:100%;
+  width: 100%;
   align-items: center;
   flex-flow: row wrap;
   margin: 10px 0 20px 0;
 }
 
-header .title{
-  width:80%;
+header .title {
+  width: 80%;
 }
 
-header .title .gg{
-  padding-left:4em;
+header .title .gg {
+  padding-left: 4em;
 }
 
 .header .header-divider {
@@ -174,17 +175,17 @@ header h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 1.4em;
-  margin:0 1em;
+  margin: 0 1em;
 }
 
 header i {
-  font-size:3em;
+  font-size: 3em;
 }
 
 header nav {
   width: 100%;
   text-transform: uppercase;
-  margin-top:1em;
+  margin-top: 1em;
 }
 
 header nav ul {
@@ -197,18 +198,21 @@ header nav ul {
 
 header nav ul li a {
   font-size: 0.8em;
-  color:  white;
-  text-decoration:none;
+  color: white;
+  text-decoration: none;
   font-weight: 700;
 }
 
 header nav ul li a:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 /*---MAIN STYLES---*/
-main{
+main {
   background: white;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 main .hero {
@@ -218,6 +222,7 @@ main .hero {
   background-size: cover;
   background-position: center;
   min-height: 200px;
+  width: 100%;
   /*position: relative;*/
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
 }
@@ -253,87 +258,79 @@ main .hero h2 {
   text-transform: uppercase;
 }*/
 
-#search, 
-#about,
-#contact {
+main #content {
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
-#search .content-wrapper,
-#about .content-wrapper,
-#contact .content-wrapper{
+main .content-wrapper {
   display: flex;
   justify-content: center;
-  margin-top:40px;
+  margin-top: 40px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
-} 
+}
 
-#search .content-wrapper article,
-#about article,
-#contact article{
-  padding:1.5em;
+#content article {
+  margin: 1.5em;
 }
 
 #about figure,
 #contact figure {
-  width:100%;
-  display:flex;
-  justify-content:center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin-bottom: 2em;
 }
 
 #about img,
-#contact img{
-  height:12em;
+#contact img {
+  height: 12em;
   overflow: hidden;
 }
 
-#about h2,
-#contact h2 {
-  text-transform: uppercase;
-}
+
 /*---SEARCH MOBILE STYLES---*/
 #search .result {
-  border: 3px dotted black;
+  /*border: 3px dotted black;*/
   padding: 10px 10px;
 }
 
 #search .content-wrapper .result p {
   margin: 0 0 1.5em 0;
-  font-size:0.9em;
+  font-size: 0.9em;
 }
 
 #search .content-wrapper .result a {
-  margin:0;
+  margin: 0;
 }
 
 /*---ABOUT MOBILE STYLES---*/
-#about img{
+#about img {
   border: 1px solid rgb(18, 0, 89);
 }
 
-#about h4{
-  margin-bottom:0.5em;
+#about h4 {
+  margin-bottom: 0.5em;
 }
 
-#about p{
+#about p {
   margin: 0;
 }
 
 /*---CONTACT MOBILE---*/
-#contact .content-wrapper{
-  margin-bottom: 40px; 
+#content .b3 {
+  margin-bottom: 40px;
 }
 
-#contact .disclaimer{
-  margin-top:1em;
+#contact .disclaimer {
+  margin-top: 1em;
   border: 2px dotted rgb(18, 0, 89);
   font-size: 0.75em;
 }
 
-#contact h4{
-  margin:0;
+#contact h4 {
+  margin: 0;
 }
 
 /*#contact .contact-form{
@@ -353,7 +350,7 @@ main .hero h2 {
 
 footer {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   background: rgb(18, 0, 89);
   padding: 20px 0;
 }
@@ -362,13 +359,13 @@ footer p {
   color: #e2e3ed;
 }
 
-footer .footer-content{
+footer .footer-content {
   border: dotted white 2px;
-  padding:1em;
+  padding: 1em;
 }
 
-footer .footer-content p{
-  margin:0;
+footer .footer-content p {
+  margin: 0;
   font-size: 0.7em;
 }
 
@@ -377,9 +374,10 @@ footer .copyright {
   text-align: center;
 }
 
-footer .copyright p{
-  font-size:0.83em;
+footer .copyright p {
+  font-size: 0.83em;
 }
+
 /* ==========================================================================
      Helper classes
      ========================================================================== */
@@ -465,50 +463,117 @@ footer .copyright p{
 
 @media only screen and (min-width: 768px) {
 
-  /*--General styles TABLET--*/
-  .content-wrapper {
-    max-width: 648px;
-  }
+  /*--GENERAL TABLET STYLES--*/
 
-  /*--Header Styles TABLET--*/
+  /*--HEADER TABLET STYLES--*/
   header {
-    padding: 50px 0;
+    padding-top: 10px;
   }
 
   header .content-wrapper {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+  }
+
+  header .title {
+    width: 50%;
   }
 
   header .header-divider {
     display: none;
   }
-   
-  header h1 {
-    width: 45%;
-    font-size: 1.85em;
-    margin:0;
-  }
 
   header nav {
-    width: 45%;
-    margin: 10px 0 0 0;
+    width: 40%;
+    margin: 0;
   }
 
   header nav ul {
+    justify-content: space-around;
+  }
+
+  header nav ul li a {
+    font-size: 1em;
+  }
+
+  /*---MAIN TABLET STYLES---*/
+    main .hero {
+    min-height: 250px;
+  }
+
+  main #content {
     justify-content: space-between;
   }
 
+  main #content .b1 {
+    width: 100%;
+  }
+
+  #content .b2,
+  #content .b3 {
+    width: 48%;
+  }
+
+  #content .b2 {
+    margin-bottom: 40px;
+    /*margin-right:2%;*/
+  }
+
+  #search article,
+  #about article,
+  #contact article {
+    padding: 2em;
+  }
+
+  #content .b1 #search {
+    width: 100%;
+  }
+
+  main #search select {
+    margin-bottom: 1.5em;
+  }
+
   footer {
-    padding:50px 0;
+    padding: 30px 0;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .content-wrapper{
-    max-width: 900px;
+
+  /*---GENERAL DESKTOP STYLES---*/
+  h2 {
+    font-size: 3.5em;
   }
+
+  /*---HEADER DESKTOP STYPES---*/
+  header nav {
+    width: 30%;
+  }
+
+  /*---HERO DESKTOP STYLES---*/
+  main .hero {
+    min-height: 400px;
+  }
+
+  /*---MAIN DESKTOP STYLES---*/
+  #content{
+    max-width:1000px;
+  }
+  #search .content-wrapper {
+    width: 100%;
+  }
+
+  main #search select {
+    margin-bottom: 1.5em;
+  }
+
+  #about,
+  #contact {
+    max-width: 750px;
+  }
+
+
+
 }
 
 @media print,
