@@ -156,12 +156,8 @@ header .content-wrapper {
   margin: 10px 0 20px 0;
 }
 
-header .title {
-  width: 80%;
-}
-
-header .title .gg {
-  padding-left: 4em;
+header img{
+  width:95%;
 }
 
 .header .header-divider {
@@ -174,7 +170,7 @@ header h1 {
   font-family: "Alata", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin: 0 1em;
 }
 
@@ -477,10 +473,11 @@ footer .copyright p {
   header .content-wrapper {
     width: 100%;
     display: flex;
+    justify-content:space-around;
   }
 
-  header .title {
-    width: 50%;
+  header img{
+    width:40%;
   }
 
   header .header-divider {
@@ -549,7 +546,18 @@ footer .copyright p {
     font-size: 3.5em;
   }
 
+  .content-wrapper{
+    max-width:1100px;
+  }
   /*---HEADER DESKTOP STYPES---*/
+
+  header .content-wrapper{
+    justify-content:space-between;
+  }
+  header img{
+    width:30%;
+  }
+
   header nav {
     width: 30%;
   }
@@ -561,7 +569,7 @@ footer .copyright p {
 
   /*---MAIN DESKTOP STYLES---*/
   #content{
-    max-width:1000px;
+    max-width:1100px;
   }
 
   #content .b1 #search{
