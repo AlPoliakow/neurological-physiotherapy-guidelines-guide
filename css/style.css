@@ -220,7 +220,7 @@ main .hero {
   min-height: 200px;
   width: 100%;
   /*position: relative;*/
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 12px 20px rgba(17, 24, 39, .2);
 }
 
 /*.hero::before {
@@ -264,7 +264,7 @@ main .content-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 12px 20px rgba(17, 24, 39, .2);
 }
 
 #content article {
@@ -318,18 +318,22 @@ main .content-wrapper {
   margin: 0;
 }
 
-/*---CONTACT MOBILE---*/
+/*---CONSIDER MOBILE---*/
 #content .b3 {
   margin-bottom: 40px;
 }
 
-#contact .disclaimer {
-  margin-top: 1em;
+#consider span{
+  font-weight: 600;
+}
+
+#consider .disclaimer {
+  margin-top: 2em;
   border: 2px dotted rgb(18, 0, 89);
   font-size: 0.75em;
 }
 
-#contact h4 {
+#consider h4 {
   margin: 0;
 }
 
@@ -347,7 +351,7 @@ main .content-wrapper {
   width:30%;
   margin-top:1.5em;
 }*/
-
+ /*---FOOTER MOBILE---*/
 footer {
   display: flex;
   justify-content: center;
@@ -361,12 +365,23 @@ footer p {
 
 footer .footer-content {
   border: dotted white 2px;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 footer .footer-content p {
   margin: 0;
   font-size: 0.7em;
+}
+
+footer #contact{
+  text-align: center;
+  font-size: 3em;
+  margin: 0.5em 0;
+}
+
+footer #contact a{
+  color:white;
+  margin: 0 15px;
 }
 
 footer .copyright {
@@ -528,6 +543,10 @@ footer .copyright p {
 
   #content .b1 #search {
     width: 100%;
+  }
+
+  #content .b1 #search label {
+    margin-left:5%;
   }
 
   main #search select {
