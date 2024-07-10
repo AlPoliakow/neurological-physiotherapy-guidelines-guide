@@ -219,40 +219,10 @@ main .hero {
   background-position: center;
   min-height: 200px;
   width: 100%;
-  /*position: relative;*/
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 12px 20px rgba(17, 24, 39, .2);
 }
 
-/*.hero::before {
-  content: "";
-  background: url('../img/pexels-pixabay-415071.jpg') rgb(184, 223, 247) no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  flex-basis: 100px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.2;
-}*/
 
-/*main .hero .content-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding-top: 10px; 
-}
-
-main .hero h2 {
-  margin-top:40px;
-  font-size: 2em;
-  color: white;
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: uppercase;
-}*/
 
 main #content {
   display: flex;
@@ -264,7 +234,7 @@ main .content-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 23px 30px rgba(17, 24, 39, .2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 12px 20px rgba(17, 24, 39, .2);
 }
 
 #content article {
@@ -318,36 +288,26 @@ main .content-wrapper {
   margin: 0;
 }
 
-/*---CONTACT MOBILE---*/
+/*---CONSIDER MOBILE---*/
 #content .b3 {
   margin-bottom: 40px;
 }
 
-#contact .disclaimer {
-  margin-top: 1em;
+#consider span{
+  font-weight: 600;
+}
+
+#consider .disclaimer {
+  margin-top: 2em;
   border: 2px dotted rgb(18, 0, 89);
   font-size: 0.75em;
 }
 
-#contact h4 {
+#consider h4 {
   margin: 0;
 }
 
-/*#contact .contact-form{
-  display:flex;
-  flex-direction:column;
-  border: 4px white dotted;
-}
-
-#contact .contact-form #email{
-  margin-bottom:1.5em;
-}
-
-#contact button {
-  width:30%;
-  margin-top:1.5em;
-}*/
-
+ /*---FOOTER MOBILE---*/
 footer {
   display: flex;
   justify-content: center;
@@ -361,12 +321,24 @@ footer p {
 
 footer .footer-content {
   border: dotted white 2px;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 footer .footer-content p {
   margin: 0;
   font-size: 0.7em;
+}
+
+footer #contact{
+  width:100%;
+  text-align: center;
+  font-size: 3em;
+  margin: 0.5em 0;
+}
+
+footer #contact a{
+  color:white;
+  margin: 0 15px;
 }
 
 footer .copyright {
@@ -530,6 +502,10 @@ footer .copyright p {
     width: 100%;
   }
 
+  #content .b1 #search label {
+    margin-left:5%;
+  }
+
   main #search select {
     margin-bottom: 1.5em;
   }
@@ -585,12 +561,9 @@ footer .copyright p {
   }
 
   #about,
-  #contact {
+  #consider {
     max-width: 750px;
   }
-
-
-
 }
 
 @media print,
