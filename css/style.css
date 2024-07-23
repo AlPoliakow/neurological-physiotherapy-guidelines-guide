@@ -503,22 +503,21 @@ footer .copyright p {
     /*margin-right:2%;*/
   }
 
-  #search article,
-  #about article,
-  #contact article {
+  #search,
+  #about,
+  #contact {
     padding: 2em;
   }
 
   #content .b1 #search {
     width: 100%;
+    padding: 2em 4em 0 4em;
   }
 
   #content .b1 #search label {
     margin-left:5%;
-  }
-
-  main #search select {
-    margin-bottom: 1.5em;
+    padding-left: 15%;
+    margin-bottom: 1em;
   }
 
   footer {
