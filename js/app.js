@@ -84,16 +84,7 @@ const updateResultsDiv = function () {
     result.innerHTML = `<a href="https://www.nice.org.uk/guidance/ng71" target="_blank" rel="noopener noreferer">Parkinson's disease in adults</a>
     <p>(National Institute for Health and Care Excellence, 2017)</p>`;
     console.log("PD selected");
+  } else if (condition === "pc") {
+    result.innerHTML="";
   }
 };
-
-//https://pva.org/research-resources/publications/clinical-practice-guidelines/
-//<a href="https://www.nationalmssociety.org/NationalMSSociety/media/MSNationalFiles/Brochures/Clinical_Bulletin_Physical-Therapy-in-MS-Rehabilitation.pdf" target="_blank" rel="noopener noreferer">Physical Therapy in Multiple
-//Sclerosis 2018</a>
-//https://www.neuropt.org/docs/ms-edge-documents/final-ms-edge-document.pdf?sfvrsn=913a970b_4
-//https://uems-prm.eu/main-ms-rehabilitation-guidelines/
-//https://www.mscare.org/page/practice_guidelines
-//<a href="" target="_blank" rel="noopener noreferer">Australian CVA Clinical Practice Guidelines *YEAR*</a>
-//<a href="https://actt.albertadoctors.org/media/hcgjedss/depression-in-ms-cpg.pdf" target="_blank" rel="noopener noreferer">Identification and management of depression in Multiple Sclerosis Clinical Practice Guideline</a>
-    //<p>2015 - Toward Optimized Practice<br><span>Physiotherapy relevant information p3</span>
-
