@@ -219,12 +219,10 @@ main .hero {
   background: url('../img/pexels-element-digital-1370295.jpg') rgb(39, 123, 168) no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 200px;
+  min-height: 130px;
   width: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 12px 20px rgba(17, 24, 39, .2);
 }
-
-
 
 main #content {
   display: flex;
@@ -482,7 +480,7 @@ footer .copyright p {
 
   /*---MAIN TABLET STYLES---*/
     main .hero {
-    min-height: 250px;
+    min-height: 190px;
   }
 
   main #content {
@@ -552,7 +550,7 @@ footer .copyright p {
 
   /*---HERO DESKTOP STYLES---*/
   main .hero {
-    min-height: 400px;
+    min-height: 270px;
   }
 
   /*---MAIN DESKTOP STYLES---*/
