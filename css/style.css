@@ -197,6 +197,8 @@ header nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 700;
+  outline: 1.5px #FFFFFF solid;
+  padding: 0.25em 0.5em;
 }
 
 header nav ul li a:hover {
@@ -340,18 +342,6 @@ footer #contact a{
   color:white;
   margin: 0 15px;
 }
-footer .arrow {
-  width:100%;
-text-align: center;
-margin-bottom:0;
-padding-bottom:0;
-}
-
-footer .arrow a {
-  color:#FFFFFF;
-  font-size: 1.5em;
- 
-}
 
 footer .copyright {
   margin-top: 40px;
@@ -470,11 +460,20 @@ footer .copyright p {
 
   header nav {
     width: 40%;
+    max-width: 330px;
     margin: 0;
   }
 
   header nav ul {
-    justify-content: space-around;
+    list-style: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  header nav ul li {
+    margin: 0.75em 1em;
   }
 
   header nav ul li a {
@@ -547,7 +546,8 @@ footer .copyright p {
   }
 
   header nav {
-    width: 30%;
+    width: 45%; /* for one row */
+    max-width: none; /* cancels out from tablet two rows */
   }
 
   /*---HERO DESKTOP STYLES---*/
