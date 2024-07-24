@@ -241,16 +241,14 @@ main .content-wrapper {
   margin: 1.5em;
 }
 
-#about figure,
-#contact figure {
+#about figure {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 2em;
 }
 
-#about img,
-#contact img {
+#about img {
   height: 12em;
   overflow: hidden;
 }
@@ -289,7 +287,7 @@ main .content-wrapper {
 }
 
 /*---CONSIDER MOBILE---*/
-#content .b3 {
+main {
   margin-bottom: 40px;
 }
 
@@ -495,18 +493,8 @@ footer .copyright p {
 
   #content .b2,
   #content .b3 {
-    width: 48%;
-  }
-
-  #content .b2 {
-    margin-bottom: 40px;
-    /*margin-right:2%;*/
-  }
-
-  #search,
-  #about,
-  #contact {
-    padding: 2em;
+    width: calc(50% - 0.5em);
+    box-sizing:border-box;
   }
 
   #content .b1 #search {
@@ -518,6 +506,15 @@ footer .copyright p {
     margin-left:5%;
     padding-left: 7%;
     margin-bottom: 1em;
+  }
+
+  #about,
+  #consider {
+    padding: 1em;
+  }
+
+  #content #consider .disclaimer {
+    margin-top: 12%;
   }
 
   footer {
@@ -585,9 +582,14 @@ footer .copyright p {
     margin-bottom: 1.5em;
   }
 
+  #content .b2,
+  #content .b3 {
+    width: calc(50% - 1em);
+  }
+
   #about,
   #consider {
-    max-width: 750px;
+    padding: 1em 2.5em;
   }
 }
 
