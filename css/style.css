@@ -100,7 +100,7 @@ body {
   height: 100%;
 }
 
-h2,
+
 h3,
 h4,
 label,
@@ -108,21 +108,30 @@ select,
 option,
 p,
 li {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Gupter", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-variation-settings:
     "wdth" 100,
     "YTLC" 500;
-  color: #152A3E;
+  color: #16204a;
   text-decoration: none;
 }
 
+h1 {
+  color: #FFFFFF;
+}
+
 h2 {
-  font-size: 2.75em;
+  font-size: 1.75em;
   margin-top: 10px;
   text-align: center;
+  font-family: "Quintessential", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.07em; /* to improve legibility */
+  font-style: normal;
 }
 
 header .content-wrapper,
@@ -143,7 +152,7 @@ figure {
 header {
   display: flex;
   justify-content: center;
-  background: rgb(18, 0, 89);
+  background: #16204a;
   color: white;
 }
 
@@ -157,25 +166,27 @@ header .content-wrapper {
 }
 
 header img{
-  width:95%;
-}
-
-.header .header-divider {
-  width: 100%;
-  height: 1px;
-  color: rgb(18, 0, 89);
+  width:35%;
+  max-width:200px;
 }
 
 header h1 {
-  font-family: "Alata", sans-serif;
-  font-weight: 400;
+  width:65%;
+  font-family: "Quintessential", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.07em; /* to improve legibility */
   font-style: normal;
-  font-size: 1.2em;
-  margin: 0 1em;
+  font-size: 1.4em;
+  padding: 0 1em;
+  box-sizing: border-box;
 }
 
-header i {
-  font-size: 3em;
+header .header-divider {
+  width: 100%;
+  height: 1px;
+  color: #16204a;
+  margin-bottom: 5px;
 }
 
 header nav {
@@ -188,12 +199,12 @@ header nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  margin: 0;
+  margin: 0 0 5px 0;
   padding-left: 0;
 }
 
 header nav ul li a {
-  font-size: 0.8em;
+  font-size: 1em;
   color: white;
   text-decoration: none;
   font-weight: 700;
@@ -253,7 +264,6 @@ main .content-wrapper {
   overflow: hidden;
 }
 
-
 /*---SEARCH MOBILE STYLES---*/
 #search .result {
   /*border: 3px dotted black;*/
@@ -275,11 +285,12 @@ main .content-wrapper {
 
 /*---ABOUT MOBILE STYLES---*/
 #about img {
-  border: 1px solid rgb(18, 0, 89);
+  border: 1px solid #16204a;
 }
 
 #about h4 {
   margin-bottom: 0.5em;
+  font-weight: 600;
 }
 
 #about p {
@@ -297,7 +308,7 @@ main {
 
 #consider .disclaimer {
   margin-top: 2em;
-  border: 2px dotted rgb(18, 0, 89);
+  border: 2px dotted #16204a;
   font-size: 0.75em;
 }
 
@@ -309,7 +320,7 @@ main {
 footer {
   display: flex;
   justify-content: center;
-  background: rgb(18, 0, 89);
+  background: #16204a;
   padding: 20px 0;
 }
 
@@ -318,7 +329,7 @@ footer p {
 }
 
 footer .footer-content {
-  border: dotted white 2px;
+  border: dotted #FFFFFF 2px;
   padding: 0.5em;
   text-align:center;
   margin-top: 10px;
@@ -337,7 +348,7 @@ footer #contact{
 }
 
 footer #contact a{
-  color:white;
+  color:#FFFFFF;
   margin: 0 15px;
 }
 
@@ -446,10 +457,16 @@ footer .copyright p {
     width: 100%;
     display: flex;
     justify-content:space-around;
+    margin: 0 2em;
   }
 
   header img{
-    width:40%;
+    width:100px;
+  }
+
+  header h1 {
+    width: calc(100% - 330px);
+    max-width:500px; /* maintains 2 lines */
   }
 
   header .header-divider {
@@ -457,7 +474,7 @@ footer .copyright p {
   }
 
   header nav {
-    width: 40%;
+    width: 230px;
     max-width: 330px;
     margin: 0;
   }
@@ -468,6 +485,7 @@ footer .copyright p {
     justify-content: center;
     margin: 0;
     padding-left: 0;
+    font-size: 0.9em;
   }
 
   header nav ul li {
@@ -485,6 +503,10 @@ footer .copyright p {
 
   main #content {
     justify-content: space-between;
+  }
+
+  #content article {
+    margin: 0;
   }
 
   main #content .b1 {
@@ -510,7 +532,7 @@ footer .copyright p {
 
   #about,
   #consider {
-    padding: 1em;
+    padding: 2em;
   }
 
   #content #consider .disclaimer {
@@ -540,7 +562,7 @@ footer .copyright p {
 
   /*---GENERAL DESKTOP STYLES---*/
   h2 {
-    font-size: 3.5em;
+    font-size: 2.25em;
   }
 
   .content-wrapper{
@@ -551,12 +573,9 @@ footer .copyright p {
   header .content-wrapper{
     justify-content:space-between;
   }
-  header img{
-    width:30%;
-  }
-
+ 
   header nav {
-    width: 45%; /* for one row */
+    width: 36%; /* for one row */
     max-width: none; /* cancels out from tablet two rows */
   }
 
@@ -589,7 +608,11 @@ footer .copyright p {
 
   #about,
   #consider {
-    padding: 1em 2.5em;
+    padding: 2em 2.5em 3em 2.5em;
+  }
+
+  #content #consider .disclaimer {
+    margin-top: 20%;
   }
 }
 
