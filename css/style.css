@@ -142,10 +142,13 @@ footer .content-wrapper {
 
 img {
   margin: 0;
+  width:100%;
 }
 
 figure {
   margin: 0;
+  display:flex;
+  justify-content:center;
 }
 
 /*---HEADER MOBILE STYLES---*/
@@ -158,27 +161,25 @@ header {
 
 header .content-wrapper {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
+  width: 90%;
   align-items: center;
   flex-flow: row wrap;
   margin: 10px 0 20px 0;
 }
 
-header img{
-  width:35%;
-  max-width:200px;
+header figure{
+  width:30%;
 }
 
 header h1 {
-  width:65%;
+  width:60%;
   font-family: "Quintessential", serif;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.07em; /* to improve legibility */
   font-style: normal;
   font-size: 1.4em;
-  padding: 0 1em;
   box-sizing: border-box;
 }
 
@@ -454,19 +455,17 @@ footer .copyright p {
   }
 
   header .content-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content:space-around;
-    margin: 0 2em;
+    margin: 1em 0;
   }
 
-  header img{
-    width:100px;
+  header figure{
+    width:80px;
   }
 
   header h1 {
-    width: calc(100% - 330px);
-    max-width:500px; /* maintains 2 lines */
+    font-size: 1.2em;
+    width: calc(100% - 350px);
+    max-width:350px; /* maintains 2 lines */
   }
 
   header .header-divider {
@@ -474,8 +473,7 @@ footer .copyright p {
   }
 
   header nav {
-    width: 230px;
-    max-width: 330px;
+    width: 210px;
     margin: 0;
   }
 
