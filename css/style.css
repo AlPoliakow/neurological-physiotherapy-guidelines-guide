@@ -537,7 +537,21 @@ footer .copyright p {
   #about,
   #consider {
     padding: 2em;
+    display: flex;
+    justify-content: center;
+    flex-flow:row wrap;
   }
+
+  #consider h2{
+    margin-bottom: 10%;
+  }
+  
+  #about h4,
+  #consider p{
+    width: 100%; /* to remove indentation */
+  }
+
+  
 
   footer {
     padding: 30px 0;
