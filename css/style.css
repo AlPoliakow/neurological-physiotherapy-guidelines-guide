@@ -479,7 +479,7 @@ footer .copyright p {
   }
 
   header nav {
-    width: 210px;
+    width: 220px; /* creates 2 rows */
     margin: 0;
   }
 
@@ -545,7 +545,7 @@ footer .copyright p {
   #consider h2{
     margin-bottom: 10%;
   }
-  
+
   #about h4,
   #consider p{
     width: 100%; /* to remove indentation */
