@@ -233,7 +233,7 @@ main {
 main .hero {
   display: flex;
   justify-content: center;
-  background: url('../img/pexels-element-digital-1370295.jpg') rgb(39, 123, 168) no-repeat;
+  background: url('../img/sunset.jpg') rgb(39, 123, 168) no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 130px;
